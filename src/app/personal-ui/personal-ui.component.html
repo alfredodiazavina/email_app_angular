@@ -1,0 +1,55 @@
+<div class="personal-ui-wrap">
+
+  <div class="window-wrap">
+    <div class="wind-option w1">a</div>
+    <div class="wind-option w2">a</div>
+    <div class="wind-option w3">a</div>
+  </div>
+
+  <app-profile-info></app-profile-info>
+
+  <div class="button-wrap">
+    <button type="button" class="btn btn-primary">new message</button>
+  </div>
+
+  <div class="options-wrap">
+
+    <div class="option-row" (click)="inboxDropDown()">
+      <div class="icon-wrap">
+        <i *ngIf="showInbox" class="fa fa-caret-up"></i>
+        <i *ngIf="!showInbox" class="fa fa-caret-down"></i>
+      </div>
+      <p class="option">inbox (2)</p>
+    </div>
+
+    <div class="option-row" (click)="draftDropDown()">
+      <div class="icon-wrap">
+        <i *ngIf="showDrafts" class="fa fa-caret-up"></i>
+        <i *ngIf="!showDrafts" class="fa fa-caret-down"></i>
+      </div>
+      <p class="option">drafts</p>
+    </div>
+
+    <div class="option-row" (click)="sentDropDown()">
+      <div class="icon-wrap">
+        <i *ngIf="showSent" class="fa fa-caret-up"></i>
+        <i *ngIf="!showSent" class="fa fa-caret-down"></i>
+      </div>
+      <p class="option">sent</p>
+    </div>
+
+    <div class="option-row" (click)="spamDropDown()">
+      <div class="icon-wrap">
+        <i class="fa fa-flag"></i>
+      </div>
+      <p class="option">spam</p>
+    </div>
+
+    <div class="option-row" (click)="trashDropDown()">
+      <div class="icon-wrap">
+        <i class="fa fa-times"></i>
+      </div>
+      <p class="option">trash</p>
+    </div>
+  </div>
+</div>

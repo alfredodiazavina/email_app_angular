@@ -1,0 +1,47 @@
+.interface {
+  width: 100%;
+  height: 100vh;
+
+  margin: auto;
+}
+
+.ui-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.personal-col {
+  width: 40%;
+  min-height: 100%;
+  background-color: #e4e4e4;
+}
+
+.message-col {
+  width: 60%;
+  min-height: 100%;
+  background-color: #f7f7f7;
+}
+
+app-personal-ui {
+  width: 40%;
+  position: fixed;
+}
+
+@media screen and (max-width: 750px) {
+
+  .message-col,
+  .personal-col,
+  .interface {
+    width: 100%;
+    min-height: 10px;
+    height: 100%;
+  }
+
+  app-personal-ui {
+    position: static;
+  }
+}
+
+

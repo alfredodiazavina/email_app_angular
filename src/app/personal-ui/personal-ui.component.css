@@ -1,0 +1,95 @@
+.window-wrap {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0 30px 5px;
+} 
+
+.wind-option {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 7px 0 0;
+}
+
+.w1 {
+  background-color: red;
+}
+
+.w2 {
+  background-color: #ffd900;
+}
+
+.w3 {
+  background-color: #158000;
+}
+
+.button-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 30px 0;
+}
+
+button {
+  width: 80%;
+  padding: 3px;
+  font-size: 20px;
+  font-weight: 300;
+
+}
+
+.options-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 0 0 0 30px;
+}
+
+.option-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-wrap {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.fa {
+  font-size: 20px;
+}
+
+.fa:hover,
+.option-row p:hover,
+.wind-option,
+.icon-wrap:hover {
+  cursor: pointer;
+}
+
+.option-row p {
+  margin-top: -2px;
+
+}
+
+@media screen and (max-width: 750px){
+
+
+  .options-wrap {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .icon-wrap {
+    margin-right: 0;
+  }
+
+  .option-row {
+    margin-right: 0px;
+  }
+
+}

@@ -1,0 +1,49 @@
+.personal-info-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-image-wrap {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  font-size: 0;
+  width: 55px;
+  height: 55px;
+  background-color: #a3b6b8;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.prof-info-wrap {
+  margin-left: 15px;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+.profile-img:hover,
+h4:hover,
+p:hover {
+  cursor: pointer;
+  color: #5c5c5c;
+}
+
+.profile-img,
+.image-buffer,
+h4,
+p {
+  transition: 150ms ease-in-out;
+}
+
+.profile-img:hover {
+  background-color: #819092;
+}
+

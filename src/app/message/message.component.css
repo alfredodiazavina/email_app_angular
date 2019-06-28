@@ -1,0 +1,63 @@
+.message-wrap {
+  padding-left: 40px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.sender-date-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.sender-wrap {
+  width: 50%;
+}
+
+.date-wrap {
+  width: 50%;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.subject-wrap {
+  position: relative;
+}
+
+.blue {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  font-size: 0;
+  top: 3px;
+  left: -30px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.message-holder p {
+  line-height: 17px;
+  font-weight: 300;
+}
+
+/* <div class="message-wrap">
+  <div class="sender-date-wrap">
+    <div class="sender-wrap">Albert Richards</div>
+    <div class="date-wrap">09:42 am</div>
+  </div>
+  <div class="subject-wrap">Re: Weekend trip</div>
+  <div class="message-holder">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Cumque sunt perferendis quibusdam rerum doloribus atque exercitationem eum et quasi ad cum reprehenderit natus,
+    minima sit?
+  </div>
+</div> */

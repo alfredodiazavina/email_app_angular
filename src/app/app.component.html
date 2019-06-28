@@ -1,0 +1,17 @@
+<div class="interface">
+  <div class="ui-wrap">
+    <div class="personal-col">
+      <app-personal-ui (inboxChanged)="inboxChanged($event)"
+       (draftChanged)="draftChanged($event)"
+       (trashChanged)="trashChanged($event)"
+       (spamChanged)="spamChanged($event)"
+        (sentChanged)="sentChanged($event)"></app-personal-ui>
+    </div>
+    <div class="message-col">
+      <app-message-feed [inboxDrop]="inboxDrop"
+      [sentDrop]="sentDrop" [draftDrop]="draftDrop"
+      [trashDrop]="trashDrop" [spamDrop]="spamDrop"
+      ></app-message-feed>
+    </div>
+  </div>
+</div>
