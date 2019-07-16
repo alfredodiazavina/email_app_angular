@@ -6,10 +6,10 @@
     <div class="wind-option w3">a</div>
   </div>
 
-  <app-profile-info></app-profile-info>
+  <app-profile-info [logInInfo]="logInDeets" [test]="index"></app-profile-info>
 
   <div class="button-wrap">
-    <button type="button" class="btn btn-primary">new message</button>
+    <button (click)="popUp()" type="button" [appMessageButton]="highlightColor" class="btn btn-primary">new message</button>
   </div>
 
   <div class="options-wrap">
@@ -19,7 +19,7 @@
         <i *ngIf="showInbox" class="fa fa-caret-up"></i>
         <i *ngIf="!showInbox" class="fa fa-caret-down"></i>
       </div>
-      <p class="option">inbox (2)</p>
+      <p class="option">inbox</p>
     </div>
 
     <div class="option-row" (click)="draftDropDown()">

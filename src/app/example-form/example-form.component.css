@@ -1,0 +1,29 @@
+.container {
+  margin-top: 30px;
+}
+
+.form-box {
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 0px 0px #aaaaaa;
+}
+
+.btn-primary {
+  margin: auto;
+  width: 80%;
+}
+
+.btn-danger {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+input.ng-touched.ng-invalid {
+  border: 1px solid red;
+}
+
+select.ng-touched.ng-invalid {
+  border: 1px solid red;
+}

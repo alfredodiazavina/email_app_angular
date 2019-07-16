@@ -1,0 +1,55 @@
+<div id="drag-item" class="top-bar-wrap">
+  <div class="left-options-wrap">
+    <div class="window-wrap">
+      <div (click)="turnOff()" class="wind-option w1">a</div>
+      <div class="wind-option w2">a</div>
+      <div class="wind-option w3">a</div>
+    </div>
+
+    <div class="options-wrap">
+      <div (click)="sentMessage()" class="send-opt-wrap">
+        <div class="icon-separate">
+          <i class="fa fa-paper-plane-o"></i>
+        </div>
+      </div>
+
+      <div class="send-opt-wrap oW2">
+        <div class="icon-separate iS1">
+          <i class="fa fa-ellipsis-v"></i>
+        </div>
+        <div class="icon-separate iS1">
+          <p>
+            <i class="fa fa-bars"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-options-wrap">
+    <div class="options-wrap oW1">
+      <div class="send-opt-wrap">
+        <div class="icon-separate">
+          <i class="fa fa-share"></i>
+        </div>
+      </div>
+      <div class="send-opt-wrap">
+        <div class="icon-separate">
+          <i class="fa fa-paperclip"></i>
+        </div>
+      </div>
+      <div (click)="draftingMessage()" class="send-opt-wrap">
+        <div class="icon-separate">
+          <i class="fa fa-clipboard"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="divider">a</div>
+<app-message-options></app-message-options>
+<app-compose-message
+(sendTo)="sendTo($event)"
+(sendSubject)="sendSubject($event)"
+(sendMessage)="sendMessage($event)"
+></app-compose-message>

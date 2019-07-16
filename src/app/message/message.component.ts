@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-message',
@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./message.component.css']
 })
 export class MessageComponent implements OnInit {
-
-  constructor() { }
+  // let message of inboxCount
+  // inboxCount[0] = {name: 'name', date: 'date', subject: 'subject', message: 'message'};
+  @Input() message;
+  constructor() {
+   }
 
   ngOnInit() {
   }

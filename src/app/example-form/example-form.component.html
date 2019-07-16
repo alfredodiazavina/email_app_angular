@@ -1,0 +1,75 @@
+<div class="container-fluid">
+  <div class="row justify-content-md-center">
+    <div class="col12 colmd8 form-box">
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+          <label for="accountType">Account Type</label>
+          <div *ngFor="let type of accountType" class="radio">
+            <input formControlName="accountType" [value]="type" type="radio"> {{ type }}
+            <span class="form-text text-muted"
+              *ngIf="!signupForm.get('accountType').valid && signupForm.get('accountType').touched">Please enter an
+              account type!</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-12 col-md-6">
+            <label for="name">Name</label>
+            <input formControlName="name" type="text" id="name" class="form-control">
+            <span class="form-text text-muted"
+              *ngIf="!signupForm.get('name').valid && signupForm.get('name').touched">Please enter a name!</span>
+          </div>
+
+          <div class="form-group col-12 col-md-6">
+            <label for="email">email</label>
+            <input formControlName="email" type="text" id="email" class="form-control">
+            <span class="form-text text-muted"
+              *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched">Please enter an email!</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-12 col-md-6">
+            <label for="streetAddress">Street Address</label>
+            <input formControlName="streetAddress" type="text" id="streetAddress" class="form-control">
+            <span class="form-text text-muted"
+              *ngIf="!signupForm.get('streetAddress').valid && signupForm.get('streetAddress').touched">Please enter an
+              address!</span>
+          </div>
+
+          <div class="form-group col-12 col-md-6">
+            <label for="city">City</label>
+            <input formControlName="city" type="text" id="city" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country</label>
+          <select placeholder="Select Coutnry" formControlName="country" type="text" id="country" class="form-control">
+            <option>United States</option>
+            <option>Unamerica</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="zipCode">Zip Code</label>
+          <input formControlName="zipCode" type="text" id="zipCode" class="form-control">
+        </div>
+
+        <span class="form-text text-muted" *ngIf="!signupFormvalid && signupForm.touched">Please enter
+          information!</span>
+
+
+        <div class="row">
+          <button [disabled]="!signupForm.valid" class="btn btn-primary" type="submit">Submit</button>
+        </div>
+
+        <div class="row">
+          <button (click)="onReset()" class="btn btn-danger" type="button">Reset</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

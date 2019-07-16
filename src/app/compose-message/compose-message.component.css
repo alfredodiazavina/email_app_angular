@@ -1,0 +1,53 @@
+.compose-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0 0 20px;
+}
+
+.compose-topic-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.topic-wrap {
+  width: 25px;
+  margin-right: 3px;
+}
+
+.input-wrap {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  border: 0;
+  background-color:#cecece;
+}
+
+.divider {
+  font-size: 0;
+  border: 1px solid grey;
+  border-width: 0 0 1px 0;
+  width: 100%;
+}
+
+p {
+  height: 15px;
+}
+
+.tS1 {
+  width: 60px;
+  margin-right: 5px;
+}
+
+.text-area {
+  width: 100%;
+  padding: 5px 20px 0 20px;
+  background-color: #cecece;
+  border: 0;
+  height: 100%;
+}
+
+.text-wrap {
+  height: 30%;
+}

@@ -1,0 +1,104 @@
+.top-bar-wrap {
+  background-color: #9e9e9e;
+  cursor: move;
+  padding: 7px 0 0 0;
+  height: 35px;
+}
+
+.window-wrap {
+  display: flex;
+  flex-direction: row;
+  padding: 7px 0 30px 5px;
+}
+
+.wind-option {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 7px 0 0;
+}
+
+.wind-option:hover {
+  cursor: pointer;
+}
+
+.w1 {
+  background-color: red;
+}
+
+.w2 {
+  background-color: #ffd900;
+}
+
+.w3 {
+  background-color: #158000;
+}
+
+h1 {
+  text-align: center;
+  margin: 0px 0 10px 0;
+}
+
+.image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+form {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.input-wrap {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid white;
+  padding-left: 25px;
+}
+
+.icon-wrap {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+button {
+  border-radius: 0px;
+}
+
+#files {
+  padding: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.fal:hover,
+.files {
+  cursor: pointer;
+}
+
+.files {
+  margin: 0;
+  padding: 2px 4px;
+}
+
+.files-btn {
+  padding: 0;
+}
+
+span {
+  margin: -15px 0 8px 0;
+}

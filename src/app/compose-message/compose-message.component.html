@@ -1,0 +1,32 @@
+<div class="compose-wrap">
+  <div class="compose-topic-wrap">
+    <div class="topic-wrap">
+      <p>To: </p>
+    </div>
+    <div class="input-wrap">
+      <input [(ngModel)]="to" type="text">
+    </div>
+  </div>
+  <div class="divider">a</div>
+  <div class="compose-topic-wrap">
+    <div class="topic-wrap">
+      <p>Cc: </p>
+    </div>
+    <div class="input-wrap">
+      <input (keyup.enter)="onKeyUp()" type="text">
+    </div>
+  </div>
+  <div class="divider">a</div>
+  <div class="compose-topic-wrap">
+    <div class="topic-wrap tS1">
+      <p>Subject: </p>
+    </div>
+    <div class="input-wrap tS2">
+      <input [(ngModel)]="subject" type="text">
+    </div>
+  </div>
+</div>
+<div class="divider">a</div>
+<div class="text-wrap">
+  <textarea [(ngModel)]="message" class="text-area"></textarea>
+</div>

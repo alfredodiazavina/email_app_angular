@@ -26,31 +26,29 @@
 <div *ngIf="inboxDrop" class="message-wrap">
   <h1>Inbox</h1>
   <hr>
-  <app-message *ngFor="let a of array"></app-message>
+  <app-message [message]="message" *ngFor="let message of inboxCount"></app-message>
 </div>
 
 <div *ngIf="draftDrop" class="message-wrap">
-    <h1>Sent</h1>
+  <h1>Drafts</h1>
   <hr>
-  <app-message *ngFor="let a of array"></app-message>
+  <app-message [message]="message" *ngFor="let message of draftCount"></app-message>
 </div>
 
 <div *ngIf="sentDrop" class="message-wrap">
-    <h1>Drafts</h1>
+  <h1>Sent</h1>
   <hr>
-  <app-message *ngFor="let a of array"></app-message>
-</div>
-
-<div *ngIf="trashDrop" class="message-wrap">
-    <h1>Trash</h1>
-  <hr>
-  <app-message *ngFor="let a of array"></app-message>
+  <app-message [message]="message" *ngFor="let message of sentCount"></app-message>
 </div>
 
 <div *ngIf="spamDrop" class="message-wrap">
-    <h1>Spam</h1>
+  <h1>Spam</h1>
   <hr>
-  <app-message *ngFor="let a of array"></app-message>
+  <app-message [message]="message" *ngFor="let message of spamCount"></app-message>
 </div>
 
-
+<div *ngIf="trashDrop" class="message-wrap">
+  <h1>Trash</h1>
+  <hr>
+  <app-message [message]="message" *ngFor="let message of trashCount"></app-message>
+</div>

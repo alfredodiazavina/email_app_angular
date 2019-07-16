@@ -1,4 +1,5 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-personal-ui',
@@ -6,37 +7,50 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./personal-ui.component.css']
 })
 export class PersonalUiComponent implements OnInit {
+  @Input() logInDeets: FormGroup;
   showInbox: Boolean = false;
   showDrafts: Boolean = false;
   showSent: Boolean = false;
   showTrash: Boolean = false;
   showSpam: Boolean = false;
+  showPopUp: Boolean = false;
+  index: number = 1;
+  key: number = 0;
+
   @Output() inboxChanged: EventEmitter<Boolean> = new EventEmitter<Boolean>();
   @Output() draftChanged: EventEmitter<Boolean> = new EventEmitter<Boolean>();
   @Output() sentChanged: EventEmitter<Boolean> = new EventEmitter<Boolean>();
   @Output() trashChanged: EventEmitter<Boolean> = new EventEmitter<Boolean>();
   @Output() spamChanged: EventEmitter<Boolean> = new EventEmitter<Boolean>();
+  @Output() popUpChanged: EventEmitter<Boolean> = new EventEmitter<Boolean>();
+  @Output() playAudio: EventEmitter<any> = new EventEmitter<any>();
   constructor() { }
 
   ngOnInit() {
   }
 
+  popUp() {
+    this.showPopUp = true;
+    this.popUpChanged.emit(this.showPopUp);
+    this.playAudio.emit();
+    if (this.key === 0) {
+      this.index = 0;
+    }
+  }
+
   inboxDropDown() {
     this.showInbox = !this.showInbox;
     this.inboxChanged.emit(this.showInbox);
-    console.log("Show inbox when dropped: " + this.showInbox);
   }
 
   draftDropDown() {
     this.showDrafts = !this.showDrafts;
     this.draftChanged.emit(this.showDrafts);
-    console.log("Show drafts when dropped: " + this.showDrafts);
   }
 
   sentDropDown() {
     this.showSent = !this.showSent;
     this.sentChanged.emit(this.showSent);
-    console.log("Show sent when dropped: " + this.showSent);
   }
 
   trashDropDown() {
