@@ -52,8 +52,8 @@ export class DragableDirective {
       elmnt.style.left = (elmnt.offsetLeft - pos1) + 'px';
       elmnt.style.margin = '0'; // I did this !!
 
-      if (pos2 + elmnt.offsetTop > window.innerHeight - elmnt.clientHeight) {
-        elmnt.style.top = (window.innerHeight - elmnt.clientHeight - 3) + 'px';
+      if (pos2 + elmnt.offsetTop > window.innerHeight - elmnt.clientHeight - 12) {
+        elmnt.style.top = (window.innerHeight - elmnt.clientHeight - 12) + 'px';
         // elmnt.offsetTop - pos2 > window.innerHeight - elmnt.offsetTop
       }
       if (pos2 > elmnt.offsetTop) {

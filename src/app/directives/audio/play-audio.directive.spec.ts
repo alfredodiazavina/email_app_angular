@@ -1,4 +1,4 @@
-import { PlayAudioDirective } from './play-audio.directive';
+import { PlayAudioDirective } from '../../play-audio.directive';
 
 describe('PlayAudioDirective', () => {
   it('should create an instance', () => {

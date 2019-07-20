@@ -89,8 +89,8 @@ export class MessageFeedComponent implements OnInit {
   }
 
   ngDoCheck() {
-      console.log("send" + this.send);
-      console.log("draft" + this.draft);
+      // console.log("send" + this.send);
+      // console.log("draft" + this.draft);
       if (this.send) {
         console.log("Changed from true to false");
         let message = this.createMessage(this.to, this.subject, this.message);
