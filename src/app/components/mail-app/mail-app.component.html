@@ -1,0 +1,13 @@
+<div class="ui-wrap">
+    <div class="personal-col">
+      <app-personal-ui (inboxChanged)="inboxChanged($event)" (draftChanged)="draftChanged($event)"
+        (trashChanged)="trashChanged($event)" (spamChanged)="spamChanged($event)" (sentChanged)="sentChanged($event)"
+        (popUpChanged)="popUpChanged($event)" (playAudio)="playAudio()" [logInDeets]="logInDeets"></app-personal-ui>
+    </div>
+    <div class="message-col">
+      <app-search></app-search>
+      <app-message-feed [inboxDrop]="inboxDrop" [sentDrop]="sentDrop" [draftDrop]="draftDrop" [trashDrop]="trashDrop"
+        [spamDrop]="spamDrop" [messagePop]="messagePop" [send]="send" [draft]="draft" [to]="to" [subject]="subject" [message]="message">
+      </app-message-feed>
+    </div>
+  </div>

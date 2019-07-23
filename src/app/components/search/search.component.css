@@ -1,0 +1,68 @@
+.search-option-wrap,
+form,
+.icons-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-option-wrap {
+  margin: 15px 0 20px 0;
+}
+
+form {
+  position: relative;
+  width: 60%;
+  margin: 0 10px 0 10px
+}
+
+.search-icon-wrap {
+  position: absolute;
+  left: 5px;
+  top: 2px;
+}
+
+.icons-wrap {
+  justify-content: space-around;
+  width: 40%;
+  margin-top: 5px;
+}
+
+input {
+  background-color: #cacaca;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  padding-left: 30px;
+  height: 30px;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+.individual-icon-wrap {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
+
+.fa {
+  font-size: 18px;
+}
+
+.fa1, .fa3 {
+  font-size: 22px;
+}
+
+.individual-icon-wrap .fa::before {
+  color: blue;
+}
+
+.individual-icon-wrap .fa:hover {
+  cursor: pointer;
+}
+
+.message-wrap {
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
